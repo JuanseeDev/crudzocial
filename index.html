@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crudzocial - Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>🌐 Crudzocial</h1>
+            <div class="header-actions">
+                <div id="user-info" class="user-info"></div>
+                <div id="admin-panel" class="admin-panel" style="display: none;">
+                    <a href="#" id="admin-link" class="admin-link">👨‍💼 Panel Admin</a>
+                </div>
+                <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="dashboard">
+            <section class="notes-section">
+                <div class="section-header">
+                    <h2>📝 Mis Notas</h2>
+                </div>
+
+                <form id="note-form" class="form-card">
+                    <h3>Crear Nueva Nota</h3>
+                    <div class="form-group">
+                        <label for="note-title">Título:</label>
+                        <input type="text" id="note-title" placeholder="Título de la nota" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-content">Contenido:</label>
+                        <textarea id="note-content" placeholder="Escribe tu nota aquí..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Crear Nota</button>
+                </form>
+
+                <div id="notes-container" class="content-grid">
+                    <!-- Las notas se cargan dinámicamente aquí -->
+                </div>
+            </section>
+            <section class="images-section">
+                <div class="section-header">
+                    <h2>🖼️ Mis Imágenes</h2>
+                </div>
+
+                <form id="image-form" class="form-card">
+                    <h3>Subir Nueva Imagen</h3>
+                    <div class="form-group">
+                        <label for="image-file">Seleccionar Imagen:</label>
+                        <input type="file" id="image-file" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image-description">Descripción:</label>
+                        <input type="text" id="image-description" placeholder="Descripción de la imagen">
+                    </div>
+                    <button type="submit" class="btn-primary">Subir Imagen</button>
+                </form>
+
+                <div id="images-container" class="content-grid">
+                    <!-- Las imágenes se cargan dinámicamente aquí -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

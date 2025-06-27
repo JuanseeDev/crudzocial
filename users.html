@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crudzocial - Panel de Administración</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>👨‍💼 Panel de Administración</h1>
+            <div class="header-actions">
+                <div id="user-info" class="user-info"></div>
+                <a href="./index.html" class="btn-secondary">🏠 Dashboard</a>
+                <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="admin-dashboard">
+            <section class="admin-section">
+                <div id="users-container" class="admin-content">
+                    <!-- Los usuarios se cargan dinámicamente de aquí pa' abajo-->
+                </div>
+            </section>
+            <section class="admin-section">
+                <div id="admin-data-container" class="admin-content">
+                    <!-- Las notas e imágenes se cargan dinámicamente de aquí pa' abajo-->
+                </div>
+            </section>
+            <section class="admin-section">
+                <div id="logs-container" class="admin-content">
+                    <!-- Los logs se cargan dinámicamente de aquí pa' abajo -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
