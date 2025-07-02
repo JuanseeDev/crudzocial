@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crudzocial - Profile</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styleinformation.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1>🌐 Crudzocial</h1>
+                <div class="header-actions">
+                    <div id="user-info" class="user-info"></div>
+                    <div id="admin-panel" class="admin-panel" style="display: none">
+                        <a href="#" id="admin-link" class="admin-link">👨‍💼 Panel Admin</a>
+                    </div>
+                    <a href="./index.html" class="btn-secondary">🏠 Dashboard</a>
+                    <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section-information">
+                <h2>Información personal</h2>
+                <form class="form-information" id="form-information">
+                    <label>Nombres<input type="text" name="first_name" id="first-name" /></label>
+                    <label>Apellidos<input type="text" name="last_name" /></label>
+                    <label>Correo electronico<input type="email" name="email" /></label>
+                    <label>Telefono<input type="tel" name="phone" /></label>
+                    <label>Pais<input type="text" name="country" /></label>
+                    <label>Ciudad<input type="text" name="city" /></label>
+                    <label>Direccion<input type="text" name="address" /></label>
+                    <label>Codigo postal<input type="number" name="postal" /></label>
+
+                    <button type="reset">Reiniciar</button>
+                    <button type="submit">Actualizar</button>
+                </form>
+            </section>
+            <div class="admin-dashboard">
+                <section class="admin-section">
+                <div id="logs-container" class="admin-content">
+                    <!-- Los logs se cargan dinámicamente de aquí pa' abajo -->
+                </div>
+            </section>
+            </div>
+        </main>
+
+        <script src="./main.js"></script>
+        <script src="./profile.js"></script>
+    </body>
+</html>
